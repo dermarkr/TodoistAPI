@@ -12,7 +12,5 @@ import pytest
 ])
 def test_convert_time(time_str, user_timezone, expected):
     result = convert_time(time_str, user_timezone)
-
-    # expected = expected.astimezone(zoneinfo.ZoneInfo(user_timezone))
     assert result == expected
 
