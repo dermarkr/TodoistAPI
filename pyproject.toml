@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "TodoistAPI"
+dynamic = ["version"]
+
+[project.version]
+source = "git"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
